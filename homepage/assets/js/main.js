@@ -190,12 +190,3 @@
 			
 
 })(jQuery);
-
-//expander
-function expandCSStory(target,button) {
-var moreText = document.getElementById(target);
-var btnText = button;
-
-btnText.style.display = "none"; 
-moreText.style.display = "inline";
-}
