@@ -3902,3 +3902,7 @@ input, select, textarea {
 	padding-bottom: 0;
 	margin-bottom: 0;
 }
+
+#cs-story{
+	display:none;
+}
