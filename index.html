@@ -17,11 +17,15 @@
 
 	<script type="text/javascript">
 		function expandCSStory(target, button) {
-			var moreText = document.getElementById(target);
+			var moreText = document.getElementsByClassName(target);
 			var btnText = button;
 
 			btnText.style.display = "none";
-			moreText.style.display = "inline";
+
+			var i, qty = moreText.length;
+			for(i = 0; i < qty; i++){
+			moreText[i].style.display = "inline";
+			}
 		}
 	</script>
 
@@ -74,24 +78,25 @@
 		<!-- One -->
 		<section id="one" class="wrapper style2 spotlights">
 			<section>
-				<a href="https://www.linkedin.com/in/bilal-zahory-94a015173/" class="image"><img src="homepage/images/bangbang.JPG" alt="" data-position="center center" /></a>
+				<!-- <a href="https://www.linkedin.com/in/bilal-zahory-94a015173/" class="image"><img src="homepage/images/bangbang.JPG" alt="" data-position="center center" /></a> -->
 				<div class="content">
 					<div class="inner">
-						<h2>My <s>Coding</s> CS Story</h2>
+						<h2>My <s>Coding</s> Story</h2>
+						<h3 class="cs-story">August 2019 (17 years old)</h3>
 						<p>
-							I was born in Fairfax Hospital to my two wonderful parents in 2001 and lived a loving and nurturing childhood.
+							I was born in Northern Virginia to my two wonderful parents in 2001 and lived a loving and nurturing childhood.
 							When I was 5, I began to show an interest in technology; I loved using the family computer and eventually
 							got my own laptop that I continued to use for much of my childhood. Technology, and the internet, in particular, fascinated me from a young age.
 							At some point, I decided that I wanted to work with computers when I was an adult but didn't get any significant exposure to actual coding
 							until the eighth grade...
-							<span id="cs-story"> </br></br>
+							<span class="cs-story"> </br></br>
 								In the eight grade, we had to do a JavaScript course on Khan Academy. At first, the foreign concepts of coding
 								confused me, but the feeling of creating something tangible from scratch (the projects in the course)
 								was enough to keep me going. After the initial barrier of confusion, I began to appreciate the beauty of writing computer code
 								and began developing a passion for it. Soon after, my guidance counselor told me about a STEM magnet
-								school opening the next year and suggested that I applied. After some questions about the program, I found out that
+								school opening the next year and suggested that I apply. After some questions about the program, I found out that
 								they had an information technology program targeted to students who wanted to code. I applied and was accepted,
-								building a commitment to my passion of what I would soon to know as computer science.
+								building a commitment to my passion of what I would soon know as computer science.
 								</br></br>
 								Going into my freshman year of high school, I struggled academically initially due to a poorly managed schedule leaving little time for
 								academics. Regardless of this lack of focus, I still showed a commitment to improving my skills in computer science. This commitment was
@@ -113,9 +118,43 @@
 								during this coming fall.
 								</br></br>
 
-								That briefly covers my journey to this point. I'll update this again in two years, hopefully with a positive reflection on my final
+								That briefly covers my journey to this point. I'll update this again in two years or so, hopefully with a positive reflection on my final
 								year of high school.
+
+								<h3 class="cs-story">March 2021 (19 years old)</h3>
+								<span class="cs-story">
+									<br></br>
+								In retrospect, I'm sure everyone saw where that was going...
+								<br></br>
+								Being born directly after 9/11 and living through an economic recession, my graduating class had their upbringing in an era defined by
+								changes to their ways of life. Most would hope that this would prepare us for future hardships, but I don't think anything could've
+								prepared us for this pandemic.
+								<br></br>
+								Hearing the hospitalizations and deaths on the news was horrible enough, but hearing those stories through friends and family was nothing short
+								of devastating. It seemed like what could've been the best years of our lives was ripped away from us and replaced with some dystopian fever
+								dream. Instead of being able to socialize with our friends and classmates for one last time, we had to do the opposite, isolating ourselves from
+								the people we know and love. Sadly, some of my peers
+								had it far worse, often grief-stricken because of situations involving their closest friends and family members, with nothing to do but be flooded with
+								some of the darkest emotions of their lives. Worse yet, they faced this grief knowing people were refusing to do their part to end the
+								pandemic &#8212; refusal to wear masks, flagrant disregard for social distancing guidelines, and everything else that allowed the pandemic
+								to get as bad as it did. It really was disappointing at times.
+								<br></br>
+								But, as days blurred together and time lost meaning, some people began to see the quarantine as a chance to improve themselves
+								and take advantage of an otherwise unfortunate situation. Pretty
+								soon, I followed suit, starting musical lessons and learning ethical hacking. As the social
+								distancing guidelines became more lax, I also got the chance to reconnect with family, and soon after, I began to feel like I was finally making something
+								of the quarantine, but there still was a part of me that felt like I could be using my time for something far better...
+								<br></br>
+								Then, this January, Robinhood, a stock trading platform I used regularly, was involved in a controversy with a community called WallStreetBets.
+								I wanted to better understand the situation, so I began to read through SEC and Finra regulation; the more I read into it, the more an idea of my own
+								began to blossom...
+								<br></br>
+								<a href="https://www.buzzapp.dev/">Stay tuned.</a>
+								</body>
+								</span>
+
 							</span>
+
 						</p>
 						<a onclick="expandCSStory('cs-story', this)" class="button">Expand</a>
 					</div>
@@ -211,7 +250,7 @@
 								</dl>
 							</li>
 
-							<li>
+							<!-- <li>
 								<dl class="nobottompadormargin"><a href="https://www.offensive-security.com/pwk-oscp/">Offensive Security Certified Professional</a>
 									<dd>
 									<dd>
@@ -220,7 +259,7 @@
 									</dd>
 									</dd>
 								</dl>
-							</li>
+							</li> -->
 
 						</ul>
 					</section>
@@ -255,7 +294,10 @@
 								</dl>
 							</li> -->
 
-							<li>Smaller projects on GitHub (link below)</li>
+							<li>
+								<dl class="nobottompadormargin"> <a href="https://www.buzzapp.dev/">Buzz Securities</a>
+									<dd>-Stay tuned :)</dd>
+								</dl>
 
 						</ul>
 					</section>
